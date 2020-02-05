@@ -1,6 +1,6 @@
-# CSS Variables Design System
+# CSS Variable Design System
 
-[View deployed example here](https://css-variable-style-system.netlify.com/)
+[View deployed example here](https://css-variable-design-system.netlify.com)
 
 ## Features
 
