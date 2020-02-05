@@ -1,4 +1,5 @@
 import Layout from "../components/layout"
+import { Link } from "gatsby"
 import React from "react"
 import SEO from "../components/seo"
 
@@ -6,7 +7,9 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <header style={{ padding: `var(--space-sm)` }}>
-      <h4>Site Title</h4>
+      <Link to="/">
+        <h4>Site Title</h4>
+      </Link>
       <nav>
         <a className="nav-link" href="">
           Navlink
@@ -78,7 +81,9 @@ const IndexPage = () => (
       </ul>
     </div>
     <footer style={{ padding: `var(--space-sm)` }}>
-      <h4 style={{ margin: `0` }}>Site Title</h4>
+      <Link to="/">
+        <h4 style={{ margin: `0` }}>Site Title</h4>
+      </Link>
     </footer>
   </Layout>
 )
