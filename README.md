@@ -2,6 +2,18 @@
 
 [View deployed example here](https://css-variable-style-system.netlify.com/)
 
+## Features
+
+- Responsive typography
+- Responsive spacing
+- Responsive automatic light / dark theme
+- Vertical rhythm with adjustable values
+- Base Components:
+  - Form
+  - Input
+  - Button
+  - Textarea
+
 ## Typography
 
 - `--sans`
@@ -60,3 +72,13 @@
 - `--elevation-3`
 - `--transition`
 - `--opacity`
+
+## Component Classes
+
+- `.form`
+- `.input`
+- `.textarea`
+- `.btn`
+- `.btn-primary`
+- `.blockquote`
+- `.nav-link`

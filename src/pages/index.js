@@ -75,7 +75,7 @@ const IndexPage = () => (
         <li>form</li>
         <li>input</li>
         <li>button</li>
-        <li>navlink</li>
+        <li>nav-link</li>
         <li>blockquote</li>
         <li>textarea</li>
       </ul>
