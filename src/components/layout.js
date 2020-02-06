@@ -1,11 +1,33 @@
+import "./index.css"
+
+import { Link } from "gatsby"
 import React from "react"
+import { useSiteMetadata } from "./hooks"
 
-import "./layout.css"
+function Layout({ children }) {
+  const { title } = useSiteMetadata()
 
-const Layout = ({ children }) => {
   return (
     <>
-      <main>{children}</main>
+      <header className="header">
+        <Link to="/">
+          <h4 className="site-title">{title}</h4>
+        </Link>
+        <nav className="nav">
+          <a className="nav-link" href="#">
+            Navlink
+          </a>
+          <a className="nav-link" href="#">
+            Navlink
+          </a>
+        </nav>
+      </header>
+      <main className="main">{children}</main>
+      <footer className="footer">
+        <Link to="/" className="none">
+          <h4 className="site-title">{title}</h4>
+        </Link>
+      </footer>
     </>
   )
 }
