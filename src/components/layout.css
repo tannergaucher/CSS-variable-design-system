@@ -302,34 +302,3 @@ h6 {
   font-size: var(--text-md);
   font-weight: 400;
 }
-
-@media (max-width: 1024px) {
-  .responsive-padding {
-    padding: 0 var(--space-sm);
-  }
-}
-
-.gatsby-highlight pre[class*="language-"] {
-  margin-bottom: var(--space-lg);
-  box-shadow: var(--elevation-3);
-}
-
-.gatsby-highlight pre[class*="language-"] code {
-  font-family: var(--mono);
-}
-
-pre[class*="language-"] {
-  padding: var(--space-sm);
-  border-radius: var(--radius);
-  background: var(--code-bg);
-}
-
-code[class*="language-"],
-pre[class*="language-"] {
-  font-family: var(--mono);
-}
-
-:not(pre) > code,
-pre {
-  background: var(--code-bg);
-}
