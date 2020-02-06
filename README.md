@@ -6,21 +6,19 @@
 
 - Responsive typography
 - Responsive spacing
-- Responsive automatic light / dark theme
+- Responsive light / dark theme
 - Vertical rhythm with adjustable values
-- Base Components:
-  - Form
-  - Input
-  - Button
-  - Textarea
 
-## Typography
+## CSS Variables
+
+### Typography
 
 - `--sans`
 - `--serif`
 - `--mono`
 - `--heading-line-height`
 - `--paragraph-line-height`
+  `--heading-letter-spacing`
 - `--paragraph-letter-spacing`
 - `--text-xs`
 - `--text-sm`
@@ -30,13 +28,13 @@
 - `--text-xxl`
 - `--text-xxxl`
 
-## Vertical Rhythm: Adjustable Values
+### Vertical Rhythm - Adjustable Values
 
 - `--responsive-unit`
 - `--text-base-size`
 - `--text-scale-ratio`
 
-## Spacing
+### Spacing
 
 - `--baseline`
 - `--space-sm`
@@ -44,7 +42,7 @@
 - `--space-lg`
 - `--space-xl`
 
-## Colors
+### Colors
 
 - `--text-color`
 - `--bg-1`
@@ -61,7 +59,7 @@
 - `--code-bg`
 - `--shadow-color`
 
-## Component Styles
+### Component Styles
 
 - `--radius`
 - `--radius-lg`
@@ -73,8 +71,9 @@
 - `--transition`
 - `--opacity`
 
-## Component Classes
+## Component CSS Classes
 
+- `.fieldset`
 - `.form`
 - `.input`
 - `.textarea`
