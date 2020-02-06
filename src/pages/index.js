@@ -25,7 +25,6 @@ function IndexPage() {
           Suspendisse commodo molestie commodo. Fusce porttitor eget est sit
           amet ultricies. Proin malesuada velit id velit viverra pretium.
         </p>
-
         <blockquote>
           Blockquote Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           Nullam eget orci ac sapien consequat posuere et id lectus. Class
@@ -35,7 +34,6 @@ function IndexPage() {
           Suspendisse commodo molestie commodo. Fusce porttitor eget est sit
           amet ultricies. Proin malesuada velit id velit viverra pretium.
         </blockquote>
-
         <p>
           Paragraph lorem ipsum dolor sit amet, consectetur adipiscing elit.
           Nullam eget orci ac sapien consequat posuere et id lectus. Class

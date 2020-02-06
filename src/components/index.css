@@ -54,8 +54,13 @@
   --grey: #666666;
   --code-bg: #28272c;
   /* Component Colors  */
+  --btn-bg: var(--bg-1);
+  --btn-color: var(--text-color);
+  --btn-border: var(--href-color);
+  --btn-hover-color: var(--text-color);
   --primary-btn-bg: black;
-  --primary-btn-color: white;
+  --primary-btn-color: var(--href-color);
+  --primary-btn-hover-color: black;
   --input-border: black;
   --shadow-color: rgba(0, 0, 0, 0.1);
   /* Components */
@@ -71,16 +76,18 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text-color: white;
-    --grey: lightgrey;
-    --href-color: #f78c6c;
-    --href-hover-color: #ff5874;
     --bg-1: black;
     --bg-2: #1a1a1b;
     --grey: #888888;
+    --text-color: white;
+    --grey: lightgrey;
     --shadow-color: black;
-    --primary-btn-bg: #1a1a1b;
-    --primary-btn-color: var(--text-color);
+    --href-color: #f78c6c;
+    --href-hover-color: #ff5874;
+    --btn-color: var(--href-color);
+    --btn-hover-color: var(--href-hover-color);
+    --primary-btn-bg: var(--bg-2);
+    --primary-btn-hover-color: var(--bg-1);
     --input-border: var(--bg-2);
     --code-bg: var(--bg-2);
   }
@@ -232,12 +239,12 @@ h6 {
 .btn {
   cursor: pointer;
   background: var(--bg-1);
-  color: var(--text-color);
+  color: var(--btn-color);
   padding: var(--space-sm) var(--space-md);
   font-size: var(--text-size);
   font-weight: bolder;
   font-family: var(--sans);
-  border: var(--thickness) solid var(--bg-2);
+  border: var(--thickness) solid var(--btn-border);
   border-radius: var(--radius);
   transition: var(--transition);
   font-weight: bolder;
@@ -250,32 +257,19 @@ h6 {
 
 .btn:disabled {
   background: var(--bg-2);
+  border-color: var(--grey);
   color: var(--grey);
   opacity: var(--opacity);
   filter: var(--opacity);
-  box-shadow: inset var(--elevation-2);
 }
 
 /*  */
 .btn:disabled:hover {
-  /* TODO: Add inset box shadow */
-  box-shadow: inset var(--elevation-3);
-}
-
-.btn.btn-primary:disabled {
-  background: var(--primary-btn-bg);
-  color: var(--grey);
-  border: var(--thickness) solid var(--bg-2);
-}
-
-.btn.btn-primary:disabled:hover {
-  color: var(--bg-1);
 }
 
 .btn:hover {
   border: var(--thickness) solid var(--href-hover-color);
-  color: var(--href-hover-color);
-  box-shadow: none;
+  color: var(--btn-hover-color);
   box-shadow: inset var(--elevation-1);
 }
 
@@ -286,8 +280,16 @@ h6 {
   box-shadow: var(--elevation-3);
 }
 
-.btn-primary:hover {
+.btn-primary:disabled {
+  background: var(--grey);
   color: var(--bg-1);
+}
+
+.btn-primary:disabled:hover {
+}
+
+.btn-primary:hover {
+  color: var(--primary-btn-hover-color);
   box-shadow: var(--elevation-1);
   background: var(--href-hover-color);
 }
