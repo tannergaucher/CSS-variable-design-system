@@ -15,6 +15,7 @@ const IndexPage = () => (
     >
       <Link to="/">
         <h4
+          style={{ padding: `var(--space-sm)`, margin: `0`, fontWeight: 900 }}
         >
           Site Title
         </h4>
