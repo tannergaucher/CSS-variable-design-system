@@ -279,6 +279,12 @@ h6 {
   font-size: var(--font-size);
 }
 
+.fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
 .text-area {
   font-family: var(--sans);
   border-radius: var(--radius);

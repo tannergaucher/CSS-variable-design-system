@@ -59,17 +59,18 @@ const IndexPage = () => (
         </button>
         <button className="btn">Regular Button</button>
       </form>
-      <br />
-      <form action="" className="form">
-        <textarea
-          className="text-area"
-          name=""
-          id=""
-          cols="30"
-          rows="10"
-        ></textarea>
-        <button className="btn btn-primary">Submit</button>
-      </form>
+      <fieldset className="fieldset">
+        <form action="" className="form">
+          <textarea
+            className="text-area"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+          <button className="btn btn-primary">Submit</button>
+        </form>
+      </fieldset>
       <h2>CSS Classes </h2>
       <ul>
         <li>form</li>
