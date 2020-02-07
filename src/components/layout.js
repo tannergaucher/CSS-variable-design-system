@@ -24,7 +24,7 @@ function Layout({ children }) {
       </header>
       <main className="main">{children}</main>
       <footer className="footer">
-        <Link to="/" className="none">
+        <Link to="/">
           <h4 className="site-title">{title}</h4>
         </Link>
       </footer>

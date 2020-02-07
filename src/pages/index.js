@@ -1,11 +1,13 @@
 import { Layout, SEO } from "../components"
+import { useExampleImage, useSiteMetadata } from "../components/hooks"
 
+import Img from "gatsby-image"
 import { Link } from "gatsby"
 import React from "react"
-import { useSiteMetadata } from "../components/hooks"
 
 function IndexPage() {
   const { title } = useSiteMetadata()
+  const { fluid } = useExampleImage()
 
   return (
     <Layout>
@@ -74,6 +76,31 @@ function IndexPage() {
             placeholder="Textarea"
           ></textarea>
         </form>
+        <p>
+          Paragraph lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Nullam eget orci ac sapien consequat posuere et id lectus. Class
+          aptent taciti sociosqu ad litora torquent per conubia nostra, per
+          inceptos himenaeos. Mauris egestas finibus enim, vel luctus felis
+          pretium et. Pellentesque iaculis dui sit amet tempor rutrum.
+          Suspendisse commodo molestie commodo. Fusce porttitor eget est sit
+          amet ultricies. Proin malesuada velit id velit viverra pretium.
+        </p>
+        <hr className="hr" />
+        <figure className="figure">
+          <Img fluid={fluid} />
+          <figcaption className="figcaption text--sm">
+            Figcaption at the beach.
+          </figcaption>
+        </figure>
+        <p>
+          Paragraph lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Nullam eget orci ac sapien consequat posuere et id lectus. Class
+          aptent taciti sociosqu ad litora torquent per conubia nostra, per
+          inceptos himenaeos. Mauris egestas finibus enim, vel luctus felis
+          pretium et. Pellentesque iaculis dui sit amet tempor rutrum.
+          Suspendisse commodo molestie commodo. Fusce porttitor eget est sit
+          amet ultricies. Proin malesuada velit id velit viverra pretium.
+        </p>
       </article>
     </Layout>
   )

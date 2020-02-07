@@ -160,7 +160,7 @@ p {
 }
 
 small {
-  font-weight: 500;
+  font-weight: 300;
 }
 
 li {
@@ -285,9 +285,6 @@ h6 {
   color: var(--bg-1);
 }
 
-.btn-primary:disabled:hover {
-}
-
 .btn-primary:hover {
   color: var(--primary-btn-hover-color);
   box-shadow: var(--elevation-1);
@@ -339,7 +336,6 @@ h6 {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: var(--space-sm);
 }
 
 .nav {
@@ -354,7 +350,21 @@ h6 {
 }
 
 .footer {
-  padding: var(--space-sm);
+}
+
+.figure {
+  margin: 0;
+}
+
+.figcaption {
+  margin-bottom: var(--space-lg);
+  font-style: italic;
+}
+
+.hr {
+  border-top: var(--thickness) solid var(--text-color);
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-xl);
 }
 
 /* Functional Classes */

@@ -61,11 +61,13 @@
 - `--grey`
 - `--href-color`
 - `--href-hover-color`
+- `--btn-bg`
+- `--btn-color`
+- `--btn-border`
+- `--btn-hover-color`
 - `--primary-btn-bg`
 - `--primary-btn-color`
-- `--outline-btn-bg`
-- `--outline-btn-color`
-- `--outline-btn-border`
+- `--primary-btn-hover-color`
 - `--input-border`
 - `--code-bg`
 - `--shadow-color`
@@ -127,24 +129,39 @@
 
 - `.nav-link`
 
-## Elements TODO
+### Nav
 
 <!-- Nav sets display flex, justify content space around -->
 
 - `nav`
+
+### Main
+
   <!-- Main sets margin var(--space-xl) auto and sets a min-height: 100vh on page.  -->
+
 - `main`
+
+### Figure
 
   <!-- Figure class removes default figure padding.  -->
 
-  - `figure`
+- `figure`
+
+### Figcaption
 
 <!-- Figcaption adds the typography classes to html figcaption element, which can replace writing an img alt tag for accessability. -->
 
 - `figcaption`
   <!-- Time class adds typography classes to html time element. -->
+
+### Time TODO
+
 - `time`
+
   <!-- Bold class adds a font-weight: 900 to the html bold element.  -->
+
+### Bold TODO
+
 - `bold`
 
 ## Functional CSS Classes
