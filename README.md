@@ -1,6 +1,4 @@
-# CSS Variable Style System
-
-[View deployed example here](https://css-variable-design-system.netlify.com)
+# Minimal Style System
 
 ## Features
 
@@ -173,3 +171,28 @@
 <!-- Give element var(--small) padding -->
 
 `.component`
+
+## Typography Classes
+
+Write html semantically and add classes to adjust text sizes
+
+- `.text--xs`
+- `.text--sm`
+- `.text--md`
+- `.text--lg`
+- `.text--xl`
+- `.text--xxl`
+- `.text--xxxl`
+
+Example
+
+```html
+<article>
+  <h1>Heading one</h1>
+  <h2 className="text--md">
+    Semantically I function has a heading two, but my text size is that of a
+    heading four.
+  </h2>
+  <p>Some article here</p>
+</article>
+```

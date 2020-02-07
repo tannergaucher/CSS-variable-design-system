@@ -336,6 +336,7 @@ h6 {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: var(--space-sm);
 }
 
 .nav {
@@ -350,6 +351,7 @@ h6 {
 }
 
 .footer {
+  padding: var(--space-sm);
 }
 
 .figure {
