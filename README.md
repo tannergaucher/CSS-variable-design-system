@@ -168,9 +168,9 @@
 
 `.container`
 
-<!-- Give element var(--small) padding -->
+<!-- Give element a var(--space-sm) padding -->
 
-`.component`
+`.padding`
 
 ## Typography Classes
 

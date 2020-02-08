@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `CSS Variable Style System`,
-    description: `Description TODO`,
+    title: `Semantic Design System`,
+    description: `Write semantic HTML, add matching class. Get responsive typography and spacing, adjustable vertical rhythm, automatic light / dark mode. Customize with CSS variables.`,
     author: `tannermichaelgaucher@gmail.com`,
   },
   plugins: [
