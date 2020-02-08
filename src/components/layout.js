@@ -16,6 +16,7 @@ function Layout({ location, children }) {
             <h4 className="site-title">{title}</h4>
           </Link>
         )}
+
         <nav className="nav">
           <Link
             to="/classes"
