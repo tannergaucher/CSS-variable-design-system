@@ -1,4 +1,6 @@
-# Minimal Style System
+# Semantic Design System
+
+Write semantic HTML, add matching class. Get responsive typography and spacing, adjustable vertical rhythm, automatic light / dark mode. Customize with CSS variables.
 
 ## Features
 
@@ -85,92 +87,54 @@
 - `--opacity`
 
 ## Component CSS Classes
-
-### Header
+## Classes
 
 - `.header`
 
-### Footer
-
 - `.footer`
-
-### Main
 
 - `.main`
 
-### Fieldset
-
 - `.fieldset`
 
-### Form
-
-- `.form`
-
-### Input
+* `.form`
 
 - `.input`
 
-### Textarea
-
-- `.textarea`
-
-### Button
+* `.textarea`
 
 - `.btn`
 - `.btn-primary`
 
-### Blockquote
-
-- `.blockquote`
-
-### A / Link
+* `.blockquote`
 
 - `.nav-link`
 
-### Nav
+- `.nav`
 
-<!-- Nav sets display flex, justify content space around -->
+- `.main`
 
-- `nav`
-
-### Main
-
-  <!-- Main sets margin var(--space-xl) auto and sets a min-height: 100vh on page.  -->
-
-- `main`
-
-### Figure
-
-  <!-- Figure class removes default figure padding.  -->
-
-- `figure`
-
-### Figcaption
-
-<!-- Figcaption adds the typography classes to html figcaption element, which can replace writing an img alt tag for accessability. -->
+- `.figure`
 
 - `figcaption`
-  <!-- Time class adds typography classes to html time element. -->
 
-### Time TODO
+### TODO
 
 - `time`
 
-  <!-- Bold class adds a font-weight: 900 to the html bold element.  -->
-
-### Bold TODO
-
 - `bold`
 
-## Functional CSS Classes
+- `code`
 
-<!-- Set element to max-width of var(--container) -->
+## Functional Classes
 
-`.container`
+- `.container`
 
-<!-- Give element a var(--space-sm) padding -->
+- `.padding`
 
-`.padding`
+- `.center`
+
+<!-- res padding -->
 
 ## Typography Classes
 

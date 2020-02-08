@@ -386,17 +386,14 @@ h6 {
 
 .nav-link {
   text-decoration: none;
-  font-size: var(--text-md);
-  padding: 0 var(--space-sm);
   font-weight: 500;
-}
-
-.nav-link:first-child {
-  padding-left: 0;
+  font-size: var(--text-md);
+  margin-right: var(--space-sm);
+  margin-bottom: var(--space-sm);
 }
 
 .nav-link:last-child {
-  padding-right: 0;
+  margin-right: 0;
 }
 
 .textarea {
@@ -438,13 +435,9 @@ h6 {
 .site-title {
   text-transform: uppercase;
   letter-spacing: var(--caps-letter-spacing);
-  font-weight: 400;
+  font-weight: 500;
   color: var(--href-color);
   margin-right: var(--space-md);
-}
-
-.site-title:hover {
-  color: var(--href-hover-color);
 }
 
 /* Layout Classes */

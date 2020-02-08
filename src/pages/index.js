@@ -62,15 +62,19 @@ function IndexPage({ location }) {
     <Layout location={location}>
       <SEO title={title} />
       <article className="container padding center page">
-        <h1 className="h1">{title}</h1>
+        <h1 className="h1 site-title">{title}</h1>
         <h2>{description}</h2>
         <hr className="hr" />
+        <P />
+        <h1 className="h1">Heading One</h1>
+        <h2>Heading Two</h2>
+        <h3>Heading Three</h3>
+        <h4>Heading Four</h4>
+        <small>Small</small>
         <P />
         <Blockquote />
         <P />
         <hr className="hr" />
-        <h2>Heading to the Beach</h2>
-        <P />
         <figure className="figure">
           <Image />
           <figcaption className="figcaption text--sm">
@@ -78,6 +82,7 @@ function IndexPage({ location }) {
           </figcaption>
         </figure>
         <P />
+        <hr className="hr" />
         <div className="responsive-content-grid">
           <Card />
           <Card />
@@ -86,10 +91,6 @@ function IndexPage({ location }) {
           <Card />
           <Card />
         </div>
-        <h3>Heading Three Hours North</h3>
-        <P />
-        <h4>Heading For Trouble</h4>
-        <P />
         <hr className="hr" />
         <Fieldset />
         <button className="btn">Button</button>

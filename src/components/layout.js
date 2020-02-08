@@ -4,50 +4,36 @@ import { Link } from "gatsby"
 import React from "react"
 import { useSiteMetadata } from "./hooks"
 
+const Navlink = ({ text, to, location }) => {
+  return (
+    <Link
+      to={to}
+      className="nav-link"
+      style={{
+        textDecoration: location.pathname === to ? `underline` : `none`,
+        color: location.pathname === to ? `var(--href-hover-color)` : `inherit`,
+      }}
+    >
+      {text}
+    </Link>
+  )
+}
+
 function Layout({ location, children }) {
   const { title } = useSiteMetadata()
 
   return (
     <>
       <header className="header">
-        {/*Why is location undefined? Gatsby bug? */}
-        {location && location.pathname === "/" ? null : (
+        {location.pathname === "/" ? null : (
           <Link to="/" className="none">
             <h4 className="site-title">{title}</h4>
           </Link>
         )}
-
         <nav className="nav">
-          <Link
-            to="/classes"
-            className="nav-link"
-            style={{
-              textDecoration:
-                location.pathname === "/classes" ? `underline` : `none`,
-            }}
-          >
-            Classes
-          </Link>
-          <Link
-            to="/variables"
-            className="nav-link"
-            style={{
-              textDecoration:
-                location.pathname === "/variables" ? `underline` : `none`,
-            }}
-          >
-            Variables
-          </Link>
-          <Link
-            to="/examples"
-            className="nav-link"
-            style={{
-              textDecoration:
-                location.pathname === "/examples" ? `underline` : `none`,
-            }}
-          >
-            Examples
-          </Link>
+          <Navlink to="/classes" text="Classes" location={location} />
+          <Navlink to="/variables" text="Variables" location={location} />
+          <Navlink to="/examples" text="Examples" location={location} />
         </nav>
       </header>
       <main className="main">{children}</main>
