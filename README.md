@@ -86,7 +86,6 @@ Write semantic HTML, add matching class. Get responsive typography and spacing, 
 - `--transition`
 - `--opacity`
 
-## Component CSS Classes
 ## Classes
 
 - `.header`
