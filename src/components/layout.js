@@ -7,12 +7,13 @@ import { useSiteMetadata } from "./hooks"
 const Navlink = ({ text, to, location }) => {
   return (
     <Link
+      data-is-active={location.pathname === to}
       to={to}
       className="nav-link"
-      style={{
-        textDecoration: location.pathname === to ? `underline` : `none`,
-        color: location.pathname === to ? `var(--href-hover-color)` : `inherit`,
-      }}
+      // style={{
+      //   textDecoration: location.pathname === to ? `underline` : `none`,
+      //   color: location.pathname === to ? `var(--href-hover-color)` : `inherit`,
+      // }}
     >
       {text}
     </Link>

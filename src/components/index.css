@@ -191,7 +191,7 @@ textarea {
   font-size: var(--text-md);
 }
 
-a {
+/* a {
   color: var(--text-color);
   transition: var(--transition);
 }
@@ -199,7 +199,7 @@ a {
 a:hover {
   color: var(--href-hover-color);
   transition: var(--transition);
-}
+} */
 
 pre {
   font-family: var(--mono);
@@ -390,10 +390,25 @@ h6 {
   font-size: var(--text-md);
   margin-right: var(--space-sm);
   margin-bottom: var(--space-sm);
+  color: var(--text-color);
+  transition: var(--transition);
 }
 
 .nav-link:last-child {
   margin-right: 0;
+}
+
+.nav-link:focus {
+  color: var(--href-hover-color) !important;
+}
+
+.nav-link:hover {
+  color: var(--href-hover-color);
+}
+
+.nav-link[data-is-active="true"] {
+  color: var(--href-hover-color);
+  text-decoration: underline;
 }
 
 .textarea {
