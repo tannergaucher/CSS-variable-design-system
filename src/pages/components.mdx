@@ -1,0 +1,131 @@
+import { Layout, SEO } from "../components"
+
+export default ({ location, children }) => (
+  <Layout location={location}>
+    <SEO title="Components" />
+    <article className="padding page">{children}</article>
+  </Layout>
+)
+
+# Components
+
+<nav style={{maxWidth: `var(--container)`}}>
+Components are just HTML elements combined with global system classes. Here are some example recipes.
+
+- `<App/>`
+- `<Card/>`
+- `<ContentAsideGrid/>`
+- `<ContentGrid/>`
+- `<Fieldset/>`
+- `<Figure/>`
+- `<Navlink/>`
+
+---
+</nav>
+
+## `<App/>`
+
+```jsx
+<div>
+  <header className="header">
+    <h4 className="site-title">Site Title</h4>
+  </header>
+  <main className="main padding">
+    <h4>Main</h4>
+  </main>
+  <footer className="footer">Footer</footer>
+</div>
+```
+
+---
+
+## `<Card/>`
+
+```jsx
+<div
+  className="card"
+  style={{
+    // For demonstration
+    maxWidth: `400px`,
+  }}
+>
+  <h4 className="card-title">Card Title</h4>
+  <Image />
+  <p className="card-text">Card text.</p>
+</div>
+```
+
+---
+
+## `<ContentAsideGrid/>`
+
+```jsx
+<main className="main content-aside-grid">
+  <article className="content" style={{background: `var(--accent-1)`}}>Content</article>
+  <aside className="aside" style={{background: `var(--accent-2)`}}>Aside</aside>
+</main>
+```
+
+---
+
+## `<ContentGrid/>`
+
+```jsx
+<div className="content-grid">
+  <Card />
+  <Card />
+  <Card />
+  <Card />
+  <Card />
+  <Card />
+</div>
+```
+
+---
+
+## `<Fieldset/>`
+
+```jsx
+<fieldset className="fieldset" style={{ maxWidth: `var(--container)`}}>
+  <form className="form" action="">
+    <input className="input" type="email" placeholder="Input" />
+    <button className="btn btn-primary" type="submit">
+      Primary Button
+    </button>
+  </form>
+</fieldset>
+```
+
+---
+
+## `<Figure/>`
+
+```jsx
+  <figure className="figure" style={{maxWidth: `var(--container)`}}>
+    <Image />
+    <figcaption className="figcaption text--sm">
+      Figcaption at the beach.
+    </figcaption>
+  </figure>
+```
+
+---
+
+## `<Navlink/>`
+
+```jsx
+// Example of a React / Reach Router Link component.
+// Location prop takes the browser's current location.
+
+function Navlink({ text = "Navlink", to = "/posts", location = "/" }) {
+  return (
+    <Link
+      className="nav-link"
+      data-is-active={location.pathname === to}
+      to={to}
+    >
+      {text}
+    </Link>
+  )
+}
+```

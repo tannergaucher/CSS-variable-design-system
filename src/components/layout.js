@@ -1,24 +1,9 @@
 import "./index.css"
 
 import { Link } from "gatsby"
+import { Navlink } from "."
 import React from "react"
 import { useSiteMetadata } from "./hooks"
-
-const Navlink = ({ text, to, location }) => {
-  return (
-    <Link
-      data-is-active={location.pathname === to}
-      to={to}
-      className="nav-link"
-      // style={{
-      //   textDecoration: location.pathname === to ? `underline` : `none`,
-      //   color: location.pathname === to ? `var(--href-hover-color)` : `inherit`,
-      // }}
-    >
-      {text}
-    </Link>
-  )
-}
 
 function Layout({ location, children }) {
   const { title } = useSiteMetadata()
@@ -33,8 +18,8 @@ function Layout({ location, children }) {
         )}
         <nav className="nav">
           <Navlink to="/classes" text="Classes" location={location} />
+          <Navlink to="/components" text="Components" location={location} />
           <Navlink to="/variables" text="Variables" location={location} />
-          <Navlink to="/examples" text="Examples" location={location} />
         </nav>
       </header>
       <main className="main">{children}</main>

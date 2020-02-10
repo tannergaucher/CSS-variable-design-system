@@ -1,0 +1,68 @@
+import { Layout, SEO } from "../components"
+
+export default ({ location, children }) => (
+  <Layout className="page" location={location}>
+    <SEO title="Variables" />
+    <article className="padding container">{children}</article>
+  </Layout>
+)
+
+---
+
+## Colors
+
+- `--text-color`
+- `--bg-1`
+- `--bg-2`
+- `--brand`
+- `--accent-1`
+- `--accent-2`
+- `--grey`
+- `--code-bg`
+
+## Components
+
+- `--elevation-1`
+- `--elevation-2`
+- `--elevation-3`
+- `--transition`
+- `--radius`
+- `--thickness`
+- `--opacity`
+
+## Layout
+
+- `--container`
+- `--max-width`
+
+## Spacing
+
+- `--space-sm`
+- `--space-md`
+- `--space-lg`
+- `--space-xl`
+
+## Typography
+
+- `--sans`
+- `--serif`
+- `--mono`
+- `--heading-line-height`
+- `--heading-letter-spacing`
+- `--paragraph-letter-spacing`
+- `--caps-letter-spacing`
+- `--text-sm`
+- `--text-md`
+- `--text-lg`
+- `--text-xl`
+- `--text-xxl`
+- `--text-xxxl`
+
+## Tokens
+
+Tokens are set once in index.css. They are not meant to be used as inline styles.
+
+- `--responsive-unit`
+- `--text-base-size`
+- `--text-scale-ratio`
+- `--baseline`
