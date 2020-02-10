@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 import { Link } from "gatsby"
 import React from "react"
 
-const P = () => (
+export const P = () => (
   <p>
     Paragraph lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
     eget orci ac sapien consequat posuere et id lectus. Class aptent taciti
@@ -17,7 +17,7 @@ const P = () => (
   </p>
 )
 
-const Blockquote = () => (
+export const Blockquote = () => (
   <blockquote className="blockquote">
     Blockquote Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
     eget orci ac sapien consequat posuere et id lectus. Class aptent taciti
@@ -29,22 +29,22 @@ const Blockquote = () => (
   </blockquote>
 )
 
-const Image = () => {
+export const Image = () => {
   const { fluid } = useExampleImage()
   return <Img fluid={fluid} />
 }
 
-const Card = () => (
+export const Card = () => (
   <div className="card">
-    <h4 className="card--title">I'm a Card Title</h4>
+    <h4 className="card-title">I'm a Card Title</h4>
     <Image />
-    <p className="card--text">
+    <p className="card-text">
       Card text is a paragraph element with a class name of card dash dash text.
     </p>
   </div>
 )
 
-const Fieldset = () => (
+export const Fieldset = () => (
   <fieldset className="fieldset">
     <form className="form" action="">
       <input className="input" type="email" placeholder="Input" />
@@ -62,7 +62,7 @@ function IndexPage({ location }) {
     <Layout location={location}>
       <SEO title={title} />
       <article className="container padding center page">
-        <h1 className="h1 site-title">{title}</h1>
+        <h1 className="h1 site-title text--xxxl">{title}</h1>
         <h2>{description}</h2>
         <hr className="hr" />
         <P />

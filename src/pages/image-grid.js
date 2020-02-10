@@ -5,7 +5,6 @@ import { useExampleImage } from "../components/hooks"
 
 const Image = () => {
   const { fluid } = useExampleImage()
-
   return <Img fluid={fluid} alt="At the beach" />
 }
 
