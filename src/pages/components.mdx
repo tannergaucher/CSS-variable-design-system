@@ -41,8 +41,8 @@ export default ({ location, children }) => (
   <header className="header" style={{ background: `var(--accent-2)` }}>
     Header
   </header>
-  <main className="main padding" style={{ background: `var(--accent-1)` }}>
-    Main
+  <main className="main" style={{ background: `var(--accent-1)` }}>
+    <h4 className="padding">Main</h4>
   </main>
   <footer className="footer" style={{ background: `var(--accent-2)` }}>
     Footer
@@ -125,10 +125,9 @@ export default ({ location, children }) => (
 ## Navlink <a id="navlink"></a>
 
 ```jsx
-// Example of a React / Reach Router Link component.
-// Location prop takes the browser's current location.
+// Gatsby Link example.
 
-function Navlink({ text = "Navlink", to = "/posts", location = "/" }) {
+function Navlink({ text = "Navlink", to = "/components", location = "/" }) {
   return (
     <Link
       className="nav-link"

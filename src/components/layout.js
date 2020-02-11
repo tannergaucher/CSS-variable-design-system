@@ -12,12 +12,7 @@ function Layout({ location, children }) {
     <>
       <header className="header">
         <Link to="/" className="none">
-          <h4
-            className="site-title text--sm"
-            style={{ marginBottom: `var(--space-lg)` }}
-          >
-            {title}
-          </h4>
+          <h4 className="site-title text--sm">{title}</h4>
         </Link>
         <nav className="nav">
           <Navlink to="/classes" text="Classes" location={location} />
@@ -27,8 +22,8 @@ function Layout({ location, children }) {
       </header>
       <main className="main">{children}</main>
       <footer className="footer">
-        <Link to="/" className="none">
-          <small className="site-title">{title}</small>
+        <Link to="/" className="none nav-link site-title">
+          <span className="text--sm">{title}</span>
         </Link>
       </footer>
     </>
