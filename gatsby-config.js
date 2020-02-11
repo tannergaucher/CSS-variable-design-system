@@ -1,12 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Semantic Design System`,
-    description: `Write semantic HTML, add matching class. Get responsive typography and spacing, adjustable vertical rhythm, automatic light / dark mode. Customize with CSS variables.`,
+    title: `Semantic Style System`,
+    description: `A CSS only, zero dependency, framework agnostic style system for rapid prototyping. Featuring responsive typography and spacing, adjustable vertical rhythm, automatic light / dark mode. Customizable with CSS variables.`,
     author: `tannermichaelgaucher@gmail.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-
     {
       resolve: `gatsby-source-filesystem`,
       options: {
