@@ -16,8 +16,8 @@ function Layout({ location, children }) {
         </Link>
         <nav className="nav">
           <Navlink to="/classes" text="Classes" location={location} />
-          <Navlink to="/components" text="Components" location={location} />
           <Navlink to="/variables" text="Variables" location={location} />
+          <Navlink to="/components" text="Components" location={location} />
         </nav>
       </header>
       <main className="main">{children}</main>
