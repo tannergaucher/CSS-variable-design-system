@@ -6,7 +6,7 @@ const Card = () => (
     <h4 className="card-title">I'm a Card Title</h4>
     <Image />
     <p className="card-text">
-      Card text is a paragraph element with a class name of card dash dash text.
+      Card text is a paragraph element with a class of card dash text.
     </p>
   </div>
 )
