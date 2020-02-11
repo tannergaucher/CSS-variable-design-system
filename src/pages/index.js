@@ -20,6 +20,7 @@ function IndexPage({ location }) {
   return (
     <Layout location={location}>
       <SEO title={title} />
+
       <article className="container padding center page">
         <h1>{description}</h1>
         <p>

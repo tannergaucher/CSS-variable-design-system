@@ -402,6 +402,7 @@ a,
   margin-bottom: var(--space-sm);
   color: var(--href-color);
   transition: var(--transition);
+  font-weight: 700;
 }
 
 .nav-link:last-child {
