@@ -460,7 +460,6 @@ a,
 .site-title {
   text-transform: uppercase;
   letter-spacing: var(--caps-letter-spacing);
-  font-weight: 900;
   color: var(--accent-2);
   margin-right: var(--space-md);
   margin-bottom: var(--space-lg);
