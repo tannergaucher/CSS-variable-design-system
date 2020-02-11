@@ -2,6 +2,30 @@
 @import url("https://fonts.googleapis.com/css?family=Fira+Code:400,700&display=swap");
 
 :root {
+  /* Colors */
+  --text-color: black;
+  --bg-1: #fafafa;
+  --bg-2: white;
+  --grey: #666666;
+  --brand: black;
+  --accent-1: dodgerblue;
+  --accent-2: hotpink;
+  --code-bg: #28272c;
+  /* Components */
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --radius: 5px;
+  --thickness: 0.2vw;
+  --elevation-1: 0 4px 12px var(--shadow-color);
+  --elevation-2: 0 4px 12px var(--shadow-color);
+  --elevation-3: 0 12px 20px var(--shadow-color);
+  --opacity: opacity(0.35);
+  --transition: all 0.2s ease 0s;
+  /* Layout */
+  --container: 833px;
+  --max-width: 2000px;
+  /* Scale */
+  --responsive-unit: 0.5vw;
+  --baseline: calc(1.2rem + var(--responsive-unit));
   /* Typography */
   --sans: "Inter", sans-serif;
   --serif: "";
@@ -11,11 +35,11 @@
   --heading-letter-spacing: 0.02rem;
   --paragraph-letter-spacing: 0.02rem;
   --caps-letter-spacing: 0.15rem;
-  /* Vertical Rhythm */
-  --responsive-unit: 0.5vw; /* TWEAK ME  */
-  /* Base Values */
   --text-base-size: calc(1rem + var(--responsive-unit));
-  --text-scale-ratio: 1.22; /* TWEAK ME */
+  --text-scale-ratio: 1.22;
+
+  /* VARIABLES BELOW THIS HAVE DERIVED / CALCULATED VALUES: ADJUSTING THEM CAN BREAK THE SYSTEM. TREAD LIGHTLY  */
+
   /* Type Scale */
   --text-xs: calc(
     1rem / (var(--text-scale-ratio) * var(--text-scale-ratio)) +
@@ -40,25 +64,12 @@
       var(--text-scale-ratio) * var(--text-scale-ratio) *
       var(--text-scale-ratio) + var(--responsive-unit)
   );
-
-  /* CALCULATED Spacing */
-  --baseline: calc(1.2rem + var(--responsive-unit));
-  /* CALCULATED Values */
+  /* Calculated Spacing */
   --space-sm: calc(var(--baseline) / 2);
   --space-md: var(--baseline);
   --space-lg: calc(var(--baseline) * 2);
   --space-xl: calc(var(--baseline) * 5);
-  /* Colors */
-  --text-color: black;
-  --bg-1: #fafafa;
-  --bg-2: white;
-  --grey: #666666;
-  --brand: black;
-  --accent-1: dodgerblue;
-  --accent-2: hotpink;
-  --code-bg: #28272c;
-
-  /* CALCULATED COLORS  */
+  /* Derived Component Colors */
   --href-color: var(--accent-1);
   --href-hover-color: var(--accent-2);
   --btn-bg: var(--bg-1);
@@ -69,15 +80,6 @@
   --primary-btn-color: var(--href-color);
   --primary-btn-hover-color: var(--brand);
   --input-border: var(--brand);
-  --shadow-color: rgba(0, 0, 0, 0.1);
-  --radius: 5px;
-  --thickness: 0.2vw;
-  --container: 833px;
-  --elevation-1: 0 4px 12px var(--shadow-color);
-  --elevation-2: 0 4px 12px var(--shadow-color);
-  --elevation-3: 0 12px 20px var(--shadow-color);
-  --transition: all 0.2s ease 0s;
-  --opacity: opacity(0.35);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -101,6 +103,8 @@
   }
 }
 
+/* Elements */
+
 body {
   margin: 0;
   font-family: var(--sans);
@@ -109,6 +113,10 @@ body {
   -webkit-font-smoothing: antialiased;
   background: var(--bg-1);
   color: var(--text-color);
+}
+
+a {
+  color: var(--href-color);
 }
 
 h1,
@@ -131,7 +139,6 @@ h1 {
 h1 .site-title {
   font-size: var(--text-xxxl);
 }
-
 h1,
 .text--xxl {
   font-size: var(--text-xxl);
@@ -234,7 +241,21 @@ h6 {
   margin-top: 0;
 }
 
-/* COMPONENT CLASSES */
+code {
+  font-family: var(--mono);
+  color: var(--text-color);
+}
+
+hr {
+  border-color: var(--href-color);
+  border-top: var(--thickness) solid var(--href-color);
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-lg);
+  box-shadow: var(--elevation-2);
+  border-radius: var(--radius);
+}
+
+/* Elements */
 
 .btn {
   cursor: pointer;
@@ -254,8 +275,6 @@ h6 {
   text-transform: uppercase;
   letter-spacing: var(--heading-letter-spacing);
 }
-
-/* add OR not first child  */
 
 .btn:not(:first-child) {
   margin-right: var(--space-md);
@@ -320,11 +339,6 @@ h6 {
   font-size: var(--text-sm);
 }
 
-code {
-  font-family: var(--mono);
-  color: var(--text-color);
-}
-
 .fieldset {
   border: none;
   margin: 0;
@@ -357,15 +371,6 @@ code {
   padding: var(--space-sm);
 }
 
-hr {
-  border-color: var(--href-color);
-  border-top: var(--thickness) solid var(--href-color);
-  margin-top: var(--space-lg);
-  margin-bottom: var(--space-lg);
-  box-shadow: var(--elevation-2);
-  border-radius: var(--radius);
-}
-
 .input {
   font-family: var(--sans);
   border-radius: var(--radius);
@@ -391,10 +396,6 @@ hr {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-}
-
-a {
-  color: var(--href-color);
 }
 
 .nav-link {
@@ -441,7 +442,7 @@ a,
   letter-spacing: var(--paragraph-letter-spacing);
 }
 
-/* Functional Classes */
+/* Layout Classes  */
 
 .padding {
   padding: 0 var(--space-sm);
@@ -458,16 +459,6 @@ a,
 .center {
   margin: 0 auto;
 }
-
-.site-title {
-  text-transform: uppercase;
-  letter-spacing: var(--caps-letter-spacing);
-  color: var(--accent-2);
-  margin-right: var(--space-md);
-  margin-bottom: var(--space-lg);
-}
-
-/* Layout Classes */
 
 .content-grid {
   display: grid;
@@ -572,6 +563,12 @@ a,
   }
 }
 
-:not(pre) > code {
-  border-radius: var(--radius);
+/* Typography */
+
+.site-title {
+  text-transform: uppercase;
+  letter-spacing: var(--caps-letter-spacing);
+  color: var(--accent-2);
+  margin-right: var(--space-md);
+  margin-bottom: var(--space-lg);
 }
