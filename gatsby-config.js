@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Semantic Style System`,
-    description: `A CSS only, zero dependency, framework agnostic style system for rapid prototyping. Featuring responsive typography and spacing, adjustable vertical rhythm, automatic light / dark mode. Customizable with CSS variables.`,
+    description: `A CSS only, zero dependency, framework agnostic style system for rapid prototyping.`,
     author: `tannermichaelgaucher@gmail.com`,
   },
   plugins: [

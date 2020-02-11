@@ -84,10 +84,12 @@
   :root {
     --bg-1: black;
     --bg-2: #1a1a1b;
+    --accent-1: pink;
+    --accent-2: purple;
     --grey: #888888;
     --text-color: white;
     --grey: lightgrey;
-    --shadow-color: black;
+    --shadow-color: rgba(0, 0, 0, 0.9);
     --href-color: var(--accent-1);
     --href-hover-color: var(--accent-2);
     --btn-color: var(--href-color);
@@ -356,7 +358,8 @@ code {
 }
 
 hr {
-  border-top: var(--thickness) solid var(--href-color);
+  border-color: var(--accent-2);
+  border-top: var(--thickness) solid var(--accent-2);
   margin-top: var(--space-lg);
   margin-bottom: var(--space-lg);
 }
@@ -385,6 +388,7 @@ hr {
 .nav {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .a,
@@ -403,6 +407,7 @@ hr {
   margin-right: 0;
 }
 
+a,
 .a,
 .nav-link:focus {
   color: var(--href-hover-color) !important;

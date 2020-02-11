@@ -21,8 +21,11 @@ function IndexPage({ location }) {
     <Layout location={location}>
       <SEO title={title} />
       <article className="container padding center page">
-        <h1 className="h1 site-title text--xxxl">{title}</h1>
-        <h2>{description}</h2>
+        <h1>{description}</h1>
+        <p>
+          Featuring responsive typography and spacing, adjustable vertical
+          rhythm, automatic light / dark mode. Customizable with CSS variables.
+        </p>
         <hr className="hr" />
         <h1 className="h1">Heading One</h1>
         <h2>Heading Two</h2>

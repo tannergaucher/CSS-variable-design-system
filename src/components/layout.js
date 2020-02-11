@@ -11,11 +11,14 @@ function Layout({ location, children }) {
   return (
     <>
       <header className="header">
-        {location.pathname === "/" ? null : (
-          <Link to="/" className="none">
-            <h4 className="site-title">{title}</h4>
-          </Link>
-        )}
+        <Link to="/" className="none">
+          <h4
+            className="site-title text--sm"
+            style={{ marginBottom: `var(--space-lg)` }}
+          >
+            {title}
+          </h4>
+        </Link>
         <nav className="nav">
           <Navlink to="/classes" text="Classes" location={location} />
           <Navlink to="/components" text="Components" location={location} />
