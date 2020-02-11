@@ -3,52 +3,59 @@ import { Layout, SEO } from "../components"
 export default ({ location, children }) => (
   <Layout location={location}>
     <SEO title="Components" />
-    <article className="padding page">{children}</article>
+    <div className="content-aside-grid">
+      <div className="content page padding">{children}</div>
+      <aside className="aside">
+        <nav>
+          <a className="nav-link" href="#app">
+            <h4>App</h4>
+          </a>
+          <a className="nav-link" href="#card">
+            <h4>Card</h4>
+          </a>
+          <a className="nav-link" href="#contentasidegrid">
+            <h4>Content Aside Grid</h4>
+          </a>
+          <a className="nav-link" href="#contentgrid">
+            <h4>Content Grid</h4>
+          </a>
+          <a className="nav-link" href="#fieldset">
+            <h4>Fieldset</h4>
+          </a>
+          <a className="nav-link" href="#figure">
+            <h4>Figure</h4>
+          </a>
+          <a className="nav-link" href="#navlink">
+            <h4>Navlink</h4>
+          </a>
+        </nav>
+      </aside>
+    </div>
   </Layout>
 )
 
-# Components
-
-<nav style={{maxWidth: `var(--container)`}}>
-Components are just HTML elements combined with global system classes. Here are some example recipes.
-
-- `<App/>`
-- `<Card/>`
-- `<ContentAsideGrid/>`
-- `<ContentGrid/>`
-- `<Fieldset/>`
-- `<Figure/>`
-- `<Navlink/>`
-
----
-</nav>
-
-## `<App/>`
+## App <a id="app"></a>
 
 ```jsx
 <div>
-  <header className="header">
-    <h4 className="site-title">Site Title</h4>
+  <header className="header" style={{ background: `var(--accent-2)` }}>
+    Header
   </header>
-  <main className="main padding">
-    <h4>Main</h4>
+  <main className="main padding" style={{ background: `var(--accent-1)` }}>
+    Main
   </main>
-  <footer className="footer">Footer</footer>
+  <footer className="footer" style={{ background: `var(--accent-2)` }}>
+    Footer
+  </footer>
 </div>
 ```
 
 ---
 
-## `<Card/>`
+## Card <a id="card"></a>
 
 ```jsx
-<div
-  className="card"
-  style={{
-    // For demonstration
-    maxWidth: `400px`,
-  }}
->
+<div className="card">
   <h4 className="card-title">Card Title</h4>
   <Image />
   <p className="card-text">Card text.</p>
@@ -57,18 +64,22 @@ Components are just HTML elements combined with global system classes. Here are 
 
 ---
 
-## `<ContentAsideGrid/>`
+## Content Aside Grid <a id="contentasidegrid"></a>
 
 ```jsx
-<main className="main content-aside-grid">
-  <article className="content" style={{background: `var(--accent-1)`}}>Content</article>
-  <aside className="aside" style={{background: `var(--accent-2)`}}>Aside</aside>
+<main className="main content-aside-grid padding">
+  <div className="content padding" style={{ background: `var(--accent-1)` }}>
+    Content
+  </div>
+  <aside className="aside" style={{ background: `var(--accent-2)` }}>
+    Aside
+  </aside>
 </main>
 ```
 
 ---
 
-## `<ContentGrid/>`
+## Content Grid <a id="contentgrid"></a>
 
 ```jsx
 <div className="content-grid">
@@ -83,10 +94,10 @@ Components are just HTML elements combined with global system classes. Here are 
 
 ---
 
-## `<Fieldset/>`
+## Fieldset <a id="fieldset"></a>
 
 ```jsx
-<fieldset className="fieldset" style={{ maxWidth: `var(--container)`}}>
+<fieldset className="fieldset" style={{ maxWidth: `var(--container)` }}>
   <form className="form" action="">
     <input className="input" type="email" placeholder="Input" />
     <button className="btn btn-primary" type="submit">
@@ -98,20 +109,20 @@ Components are just HTML elements combined with global system classes. Here are 
 
 ---
 
-## `<Figure/>`
+## Figure <a id="figure"></a>
 
 ```jsx
-  <figure className="figure" style={{maxWidth: `var(--container)`}}>
-    <Image />
-    <figcaption className="figcaption text--sm">
-      Figcaption at the beach.
-    </figcaption>
-  </figure>
+<figure className="figure" style={{ maxWidth: `var(--container)` }}>
+  <Image />
+  <figcaption className="figcaption text--sm">
+    Figcaption at the beach.
+  </figcaption>
+</figure>
 ```
 
 ---
 
-## `<Navlink/>`
+## Navlink <a id="navlink"></a>
 
 ```jsx
 // Example of a React / Reach Router Link component.

@@ -1,3 +1,5 @@
+import "prism-theme-night-owl"
+
 import { Card, Navlink } from "./src/components"
 import { LiveEditor, LiveError, LivePreview, LiveProvider } from "react-live"
 
@@ -24,7 +26,6 @@ const components = {
           boxShadow: `var(--elevation-2)`,
           margin: `var(--space-lg) 0`,
           fontSize: `var(--text-sm)`,
-          maxWidth: `var(--container)`,
         }}
       />
       <LiveError />

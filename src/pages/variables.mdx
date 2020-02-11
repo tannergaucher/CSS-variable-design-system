@@ -3,13 +3,35 @@ import { Layout, SEO } from "../components"
 export default ({ location, children }) => (
   <Layout className="page" location={location}>
     <SEO title="Variables" />
-    <article className="padding container">{children}</article>
+    <div className="content-aside-grid">
+      <div className="content page padding">{children}</div>
+      <aside className="aside">
+        <nav>
+          <a className="nav-link" href="#colors">
+            <h4>Colors</h4>
+          </a>
+          <a className="nav-link" href="#components">
+            <h4>Components</h4>
+          </a>
+          <a className="nav-link" href="#layout">
+            <h4>Layout</h4>
+          </a>
+          <a className="nav-link" href="#spacing">
+            <h4>Spacing</h4>
+          </a>
+          <a className="nav-link" href="#typography">
+            <h4>Typography</h4>
+          </a>
+          <a className="nav-link" href="#tokens">
+            <h4>Tokens</h4>
+          </a>
+        </nav>
+      </aside>
+    </div>
   </Layout>
 )
 
----
-
-## Colors
+## Colors <a id="colors"></a>
 
 - `--text-color`
 - `--bg-1`
@@ -20,7 +42,9 @@ export default ({ location, children }) => (
 - `--grey`
 - `--code-bg`
 
-## Components
+---
+
+## Components <a id="components"></a>
 
 - `--elevation-1`
 - `--elevation-2`
@@ -30,19 +54,25 @@ export default ({ location, children }) => (
 - `--thickness`
 - `--opacity`
 
-## Layout
+---
+
+## Layout <a id="layout"></a>
 
 - `--container`
 - `--max-width`
 
-## Spacing
+---
+
+## Spacing <a id="spacing"></a>
 
 - `--space-sm`
 - `--space-md`
 - `--space-lg`
 - `--space-xl`
 
-## Typography
+---
+
+## Typography <a id="typography"></a>
 
 - `--sans`
 - `--serif`
@@ -58,11 +88,15 @@ export default ({ location, children }) => (
 - `--text-xxl`
 - `--text-xxxl`
 
-## Tokens
+---
 
-Tokens are set once in index.css. They are not meant to be used as inline styles.
+## Tokens <a id="tokens"></a>
+
+Values set once in index.css and not meant to be used as inline styles.
 
 - `--responsive-unit`
 - `--text-base-size`
 - `--text-scale-ratio`
 - `--baseline`
+
+---

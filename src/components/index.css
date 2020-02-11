@@ -495,33 +495,38 @@ hr {
 
 .content-aside-grid {
   display: grid;
-  grid-template-areas: "content aside";
-  grid-template-columns: 5fr 3fr;
+  grid-template-areas: "aside content";
+  grid-template-columns: 2fr 5fr;
   grid-column-gap: var(--space-md);
-  margin: var(--space-md);
 }
 
-.content-aside-grid .content {
-  grid-area: "content";
+.content {
+  grid-area: content;
 }
 
-.content.aside.grid .aside {
-  grid-area: "aside";
-  margin: 0 var(--space-md);
+.aside {
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-sm);
+  position: sticky;
+  top: 0;
+  height: 100vh;
 }
 
 @media (max-width: 600px) {
   .content-aside-grid {
     grid-template-areas:
-      "content"
-      "aside";
+      "aside"
+      "content";
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
   }
 
-  aside .aside {
-    margin: 0;
-    padding: var(--space-sm);
+  .aside {
+    margin-top: var(--space-md);
+    height: 100%;
+    position: initial;
   }
 }
 

@@ -3,13 +3,29 @@ import { Layout, SEO } from "../components"
 export default ({ location, children }) => (
   <Layout location={location}>
     <SEO title="Classes" />
-    <article className="padding container  page">{children}</article>
+    <div className="content-aside-grid">
+      <div className="content page padding">{children}</div>
+      <aside className="aside">
+        <nav>
+          <a className="nav-link" href="#elements">
+            <h4>Elements</h4>
+          </a>
+          <a className="nav-link" href="#components">
+            <h4>Components</h4>
+          </a>
+          <a className="nav-link" href="#layout">
+            <h4>Layout</h4>
+          </a>
+          <a className="nav-link" href="#typography">
+            <h4>Typography</h4>
+          </a>
+        </nav>
+      </aside>
+    </div>
   </Layout>
 )
 
----
-
-## Elements
+## Elements<a id="elements"></a>
 
 - `.a`
 - `.aside`
@@ -26,24 +42,36 @@ export default ({ location, children }) => (
 - `.main`
 - `.nav`
 
-## Components
+---
+
+## Components<a id="components"></a>
 
 - `.card`
 - `.card-text`
 - `.card-title`
 - `.nav-link`
 
-## Layout
+---
+
+## Layout <a id="layout"></a>
 
 - `.center`
 - `.container`
+- `.content-grid`
+- `.content-aside-grid`
+- `.image-grid`
+- `.content`
+- `.aside`
 - `.image-grid`
 - `.none`
 - `.padding`
 - `.page`
-- `.responsive-content-grid`
+- `.only-mobile-padding`
+- `.only-fullscreen-padding`
 
-## Typography
+---
+
+## Typography <a id="typography"></a>
 
 - `.site-title`
 - `.text--xs`
@@ -53,3 +81,5 @@ export default ({ location, children }) => (
 - `.text--xl`
 - `.text--xxl`
 - `.text--xxxl`
+
+---
