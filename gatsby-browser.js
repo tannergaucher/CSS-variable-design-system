@@ -28,7 +28,16 @@ const components = {
           fontSize: `var(--text-sm)`,
         }}
       />
-      <LiveError />
+      <LiveError
+        style={{
+          fontSize: `var(--text-xs)`,
+          borderRadius: `var(--radius)`,
+          margin: `var(--space-lg) 0`,
+          boxShadow: `var(--elevation-3)`,
+          color: `papayawhip`,
+          background: `var(--code-bg)`,
+        }}
+      />
       <LivePreview
         style={{
           marginBottom: `var(--space-lg)`,
