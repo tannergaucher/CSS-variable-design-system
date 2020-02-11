@@ -127,7 +127,12 @@ export default ({ location, children }) => (
 ```jsx
 // Gatsby Link example.
 
-function Navlink({ text = "Navlink", to = "/components", location = "/" }) {
+function Navlink({
+  text = "Navlink",
+  to = "/components",
+  // Mocked reach router location object
+  location = { pathname: "/" },
+}) {
   return (
     <Link
       className="nav-link"
