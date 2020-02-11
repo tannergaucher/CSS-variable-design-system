@@ -1,6 +1,5 @@
-import { Blockquote, Image, P } from "../helpers"
+import { Blockquote, P } from "../helpers"
 import {
-  Card,
   ContentGrid,
   Fieldset,
   Figure,
@@ -8,11 +7,9 @@ import {
   Layout,
   SEO,
 } from "../components"
-import { useExampleImage, useSiteMetadata } from "../components/hooks"
 
-import Img from "gatsby-image"
-import { Link } from "gatsby"
 import React from "react"
+import { useSiteMetadata } from "../components/hooks"
 
 function IndexPage({ location }) {
   const { title, description } = useSiteMetadata()
@@ -20,7 +17,6 @@ function IndexPage({ location }) {
   return (
     <Layout location={location}>
       <SEO title={title} />
-
       <article className="container padding center page">
         <h1>{description}</h1>
         <p>
@@ -59,7 +55,6 @@ function IndexPage({ location }) {
           ></textarea>
           <button className="btn btn-primary">Submit</button>
         </form>
-        {/* TODO: add color swatches */}
       </article>
     </Layout>
   )
