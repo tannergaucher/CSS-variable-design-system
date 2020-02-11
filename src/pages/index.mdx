@@ -1,0 +1,68 @@
+import { Blockquote, P } from "../helpers"
+import {
+  ContentGrid,
+  Fieldset,
+  Figure,
+  ImageGrid,
+  Layout,
+  SEO,
+} from "../components"
+
+import { useSiteMetadata } from "../components/hooks"
+
+export default ({ location, children }) => {
+  const { title, description } = useSiteMetadata()
+  return (
+    <Layout className="page" location={location}>
+      <SEO title={title} />
+      <article className="container padding page center">
+        <h1>{description}</h1>
+        {children}
+      </article>
+    </Layout>
+  )
+}
+
+Featuring responsive typography and spacing, adjustable verticalrhythm, automatic light / dark mode. Customizable with CSS variables.
+
+---
+
+# Heading One
+
+## Heading Two
+
+### Heading Three
+
+#### Heading Four
+
+<small>Small</small>
+<P />
+<Blockquote />
+
+---
+
+<Figure />
+<P />
+
+---
+
+<ContentGrid />
+
+---
+
+<ImageGrid />
+
+---
+
+<Fieldset />
+<button className="btn">Button</button>
+<button className="btn" disabled>
+  Disabled Button
+</button>
+<button className="btn btn-primary" disabled>
+  Disabled Primary Button
+</button>
+<form action="" className="form">
+  <textarea className="textarea" cols="30" placeholder="Textarea"></textarea>
+  <button className="btn btn-primary">Submit</button>
+</form>
