@@ -1,14 +1,8 @@
 # Semantic Design System
 
-Write semantic HTML, add matching class. Get responsive typography and spacing, adjustable vertical rhythm, automatic light / dark mode. Customize with CSS variables.
+Write semantic HTML with matching class. Get responsive typography and spacing, adjustable vertical rhythm, automatic light / dark mode. Customize with CSS variables. No dependencies. Framework agnostic.
 
 ## Features
-
-- Responsive typography and spacing
-- Responsive light / dark color theme
-- Adjustable vertical rhythm
-- Light-weight CSS classes that pair with HTML elements to encourage writing semantic HTML by default
-- Small number of functional CSS classes for adjusting layout
 
 ## CSS Variables
 

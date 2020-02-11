@@ -1,0 +1,102 @@
+import { Layout, SEO } from "../components"
+
+export default ({ location, children }) => (
+  <Layout className="page" location={location}>
+    <SEO title="Variables" />
+    <div className="content-aside-grid">
+      <div className="content page padding">{children}</div>
+      <aside className="aside">
+        <nav>
+          <a className="nav-link" href="#colors">
+            <h4>Colors</h4>
+          </a>
+          <a className="nav-link" href="#components">
+            <h4>Components</h4>
+          </a>
+          <a className="nav-link" href="#layout">
+            <h4>Layout</h4>
+          </a>
+          <a className="nav-link" href="#spacing">
+            <h4>Spacing</h4>
+          </a>
+          <a className="nav-link" href="#typography">
+            <h4>Typography</h4>
+          </a>
+          <a className="nav-link" href="#tokens">
+            <h4>Tokens</h4>
+          </a>
+        </nav>
+      </aside>
+    </div>
+  </Layout>
+)
+
+## Colors <a id="colors"></a>
+
+- `--text-color`
+- `--bg-1`
+- `--bg-2`
+- `--brand`
+- `--accent-1`
+- `--accent-2`
+- `--grey`
+- `--code-bg`
+
+---
+
+## Components <a id="components"></a>
+
+- `--elevation-1`
+- `--elevation-2`
+- `--elevation-3`
+- `--transition`
+- `--radius`
+- `--thickness`
+- `--opacity`
+
+---
+
+## Layout <a id="layout"></a>
+
+- `--container`
+- `--max-width`
+
+---
+
+## Spacing <a id="spacing"></a>
+
+- `--space-sm`
+- `--space-md`
+- `--space-lg`
+- `--space-xl`
+
+---
+
+## Typography <a id="typography"></a>
+
+- `--sans`
+- `--serif`
+- `--mono`
+- `--heading-line-height`
+- `--heading-letter-spacing`
+- `--paragraph-letter-spacing`
+- `--caps-letter-spacing`
+- `--text-sm`
+- `--text-md`
+- `--text-lg`
+- `--text-xl`
+- `--text-xxl`
+- `--text-xxxl`
+
+---
+
+## Tokens <a id="tokens"></a>
+
+Values set once in index.css and not meant to be used as inline styles.
+
+- `--responsive-unit`
+- `--text-base-size`
+- `--text-scale-ratio`
+- `--baseline`
+
+---

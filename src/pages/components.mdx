@@ -1,0 +1,142 @@
+import { Layout, SEO } from "../components"
+
+export default ({ location, children }) => (
+  <Layout location={location}>
+    <SEO title="Components" />
+    <div className="content-aside-grid">
+      <div className="content page padding">{children}</div>
+      <aside className="aside">
+        <nav>
+          <a className="nav-link" href="#app">
+            <h4>App</h4>
+          </a>
+          <a className="nav-link" href="#card">
+            <h4>Card</h4>
+          </a>
+          <a className="nav-link" href="#contentasidegrid">
+            <h4>Content Aside Grid</h4>
+          </a>
+          <a className="nav-link" href="#contentgrid">
+            <h4>Content Grid</h4>
+          </a>
+          <a className="nav-link" href="#fieldset">
+            <h4>Fieldset</h4>
+          </a>
+          <a className="nav-link" href="#figure">
+            <h4>Figure</h4>
+          </a>
+          <a className="nav-link" href="#navlink">
+            <h4>Navlink</h4>
+          </a>
+        </nav>
+      </aside>
+    </div>
+  </Layout>
+)
+
+## App <a id="app"></a>
+
+```jsx
+<div>
+  <header className="header" style={{ background: `var(--accent-2)` }}>
+    Header
+  </header>
+  <main className="main padding" style={{ background: `var(--accent-1)` }}>
+    Main
+  </main>
+  <footer className="footer" style={{ background: `var(--accent-2)` }}>
+    Footer
+  </footer>
+</div>
+```
+
+---
+
+## Card <a id="card"></a>
+
+```jsx
+<div className="card">
+  <h4 className="card-title">Card Title</h4>
+  <Image />
+  <p className="card-text">Card text.</p>
+</div>
+```
+
+---
+
+## Content Aside Grid <a id="contentasidegrid"></a>
+
+```jsx
+<main className="main content-aside-grid padding">
+  <div className="content padding" style={{ background: `var(--accent-1)` }}>
+    Content
+  </div>
+  <aside className="aside" style={{ background: `var(--accent-2)` }}>
+    Aside
+  </aside>
+</main>
+```
+
+---
+
+## Content Grid <a id="contentgrid"></a>
+
+```jsx
+<div className="content-grid">
+  <Card />
+  <Card />
+  <Card />
+  <Card />
+  <Card />
+  <Card />
+</div>
+```
+
+---
+
+## Fieldset <a id="fieldset"></a>
+
+```jsx
+<fieldset className="fieldset" style={{ maxWidth: `var(--container)` }}>
+  <form className="form" action="">
+    <input className="input" type="email" placeholder="Input" />
+    <button className="btn btn-primary" type="submit">
+      Primary Button
+    </button>
+  </form>
+</fieldset>
+```
+
+---
+
+## Figure <a id="figure"></a>
+
+```jsx
+<figure className="figure" style={{ maxWidth: `var(--container)` }}>
+  <Image />
+  <figcaption className="figcaption text--sm">
+    Figcaption at the beach.
+  </figcaption>
+</figure>
+```
+
+---
+
+## Navlink <a id="navlink"></a>
+
+```jsx
+// Example of a React / Reach Router Link component.
+// Location prop takes the browser's current location.
+
+function Navlink({ text = "Navlink", to = "/posts", location = "/" }) {
+  return (
+    <Link
+      className="nav-link"
+      data-is-active={location.pathname === to}
+      to={to}
+    >
+      {text}
+    </Link>
+  )
+}
+```

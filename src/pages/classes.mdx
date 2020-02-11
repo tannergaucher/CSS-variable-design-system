@@ -1,0 +1,85 @@
+import { Layout, SEO } from "../components"
+
+export default ({ location, children }) => (
+  <Layout location={location}>
+    <SEO title="Classes" />
+    <div className="content-aside-grid">
+      <div className="content page padding">{children}</div>
+      <aside className="aside">
+        <nav>
+          <a className="nav-link" href="#elements">
+            <h4>Elements</h4>
+          </a>
+          <a className="nav-link" href="#components">
+            <h4>Components</h4>
+          </a>
+          <a className="nav-link" href="#layout">
+            <h4>Layout</h4>
+          </a>
+          <a className="nav-link" href="#typography">
+            <h4>Typography</h4>
+          </a>
+        </nav>
+      </aside>
+    </div>
+  </Layout>
+)
+
+## Elements<a id="elements"></a>
+
+- `.a`
+- `.aside`
+- `.btn`
+- `.btn-primary`
+- `.code`
+- `.fieldset`
+- `.figcaption`
+- `.figure`
+- `.footer`
+- `.form`
+- `.header`
+- `.input`
+- `.main`
+- `.nav`
+
+---
+
+## Components<a id="components"></a>
+
+- `.card`
+- `.card-text`
+- `.card-title`
+- `.nav-link`
+
+---
+
+## Layout <a id="layout"></a>
+
+- `.center`
+- `.container`
+- `.content-grid`
+- `.content-aside-grid`
+- `.image-grid`
+- `.content`
+- `.aside`
+- `.image-grid`
+- `.none`
+- `.padding`
+- `.page`
+- `.only-mobile-padding`
+- `.only-fullscreen-padding`
+
+---
+
+## Typography <a id="typography"></a>
+
+- `.site-title`
+- `.text--xs`
+- `.text--sm`
+- `.text--md`
+- `.text--lg`
+- `.text--xl`
+- `.text--xxl`
+- `.text--xxxl`
+
+---
