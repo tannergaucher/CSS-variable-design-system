@@ -534,6 +534,7 @@ a,
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: var(--space-sm);
   max-width: var(--max-width);
+  margin-top: var(--space-lg);
   margin-bottom: var(--space-lg);
 
   @media (min-width: 1200px) {
