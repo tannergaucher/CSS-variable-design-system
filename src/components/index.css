@@ -337,7 +337,6 @@ hr {
 .card-text {
   margin: 0;
   padding: var(--space-sm);
-  font-size: var(--text-sm);
 }
 
 .fieldset {
@@ -401,7 +400,6 @@ hr {
 
 .nav-link {
   text-decoration: none;
-  font-size: var(--text-md);
   margin-right: var(--space-sm);
   margin-bottom: var(--space-sm);
   color: var(--href-color);
