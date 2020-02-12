@@ -22,7 +22,7 @@
   --transition: all 0.2s ease 0s;
   /* Layout */
   --container: 833px;
-  --max-width: 2000px;
+  --max-width: 3000px;
   /* Scale */
   --responsive-unit: 0.5vw;
   --baseline: calc(1.2rem + var(--responsive-unit));
@@ -372,6 +372,7 @@ hr {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: var(--space-sm);
+  padding-top: 0;
 }
 
 .input {
@@ -393,6 +394,7 @@ hr {
 
 .main {
   min-height: 100vh;
+  max-width: var(--max-width);
 }
 
 .nav {
