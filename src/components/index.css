@@ -568,7 +568,7 @@ a,
 .site-title {
   text-transform: uppercase;
   letter-spacing: var(--caps-letter-spacing);
-  color: var(--accent-2);
+  color: var(--accent-1);
   margin-right: var(--space-md);
   margin-bottom: var(--space-lg);
 }
