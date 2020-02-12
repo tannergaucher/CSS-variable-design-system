@@ -577,3 +577,7 @@ a,
   margin-right: var(--space-md);
   margin-bottom: var(--space-lg);
 }
+
+footer > .site-title {
+  margin-bottom: 0;
+}
